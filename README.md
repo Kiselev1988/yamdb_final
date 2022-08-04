@@ -4,7 +4,7 @@
 
 Проект доступен по адресу http://51.250.25.202/api/v1/
 ### Клонировать репозиторий
-git clone https://github.com/Kiselev1988/infra_sp2.git
+git clone https://github.com/Kiselev1988/yamdb_final.git
 
 ### Создать файл .env с содержанием:
 
