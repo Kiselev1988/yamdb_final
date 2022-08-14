@@ -41,7 +41,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/yamdb_f:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/yamdb_f:v1.07.2022
           context: api_yamdb
           file: api_yamdb/Dockerfile        
   deploy:
@@ -58,7 +58,7 @@ jobs:
         script: |
           sudo docker-compose stop
           sudo docker-compose rm -f web
-          sudo docker pull ${{ secrets.DOCKER_USERNAME }}/yamdb_f:latest
+          sudo docker pull ${{ secrets.DOCKER_USERNAME }}/yamdb_f:v1.07.2022
           touch .env
           echo DB_ENGINE=${{ secrets.DB_ENGINE }} >> .env
           echo DB_NAME=${{ secrets.DB_NAME }} >> .env
