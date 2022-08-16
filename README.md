@@ -2,7 +2,7 @@
 
 # Проект YaMDb_Final
 
-Проект доступен по адресу http://51.250.25.202/api/v1/ http://51.250.25.202/redoc/
+Проект доступен по адресу http://51.250.25.202/api/v1/
 ### Клонировать репозиторий
 
 git clone https://github.com/Kiselev1988/yamdb_final.git
