@@ -11,8 +11,8 @@ services:
     image: nikita1988/yamdb_f:v1.07.2022
     restart: always
     volumes:
-      - static_value:/api_yamdb/static/
-      - media_value:/api_yamdb/media/
+      - static_value:/app/static/
+      - media_value:/app/media/
     depends_on:
       - db
     env_file:
